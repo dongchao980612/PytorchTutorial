@@ -5,3 +5,7 @@
 # File    : 1、PyTorch环境的配置及安装.py
 # Software: PyCharm
 
+import torch
+
+if __name__ == '__main__':
+    print(torch.cuda.is_available())  # True
