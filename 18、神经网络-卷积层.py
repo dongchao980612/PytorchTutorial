@@ -4,9 +4,10 @@
 # Author  : dongchao
 # File    : 18、神经网络-卷积层.py
 # Software: PyCharm
+
+
 import torch
 import torch.nn as nn
-
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from torchvision.datasets import CIFAR10
@@ -24,7 +25,6 @@ class Model(nn.Module):
 
 
 if __name__ == '__main__':
-    # 使用测试集，因为比较小
     dataset = CIFAR10("./datasets", train=False, transform=ToTensor())
     dataloader = DataLoader(dataset=dataset, batch_size=64)
 
